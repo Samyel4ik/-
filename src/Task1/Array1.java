@@ -14,9 +14,10 @@ public class Array1 {
         for (int i = 0; i < array.length; i++) {            //заполнение массива
             for (int j = 0; j < array[i].length; j++) {
                 array[i][j] = random.nextInt(100);
-                System.out.print(array[i][j] + " ");
             }
-            System.out.println();
+        }
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(Arrays.toString(array[i]));
         }
         System.out.println();
         System.out.println("Нечетные столбцы у которых первое число больше второго");

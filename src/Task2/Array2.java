@@ -11,9 +11,12 @@ public class Array2 {
                         {4, 5, 6},
                         {7, 8, 9}
                 };
-        System.out.println("Исходный массив");
-        System.out.println(Arrays.deepToString(array));
-        System.out.println("Числа по диогонали");
+        System.out.println("Исходный массив:");
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(Arrays.toString(array[i]));
+        }
+
+        System.out.println("Числа по диогонали:");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i][i] + " ");
         }
